@@ -1,44 +1,11 @@
-import { useState } from "react";
-
-
-
-const Card = ({title}) => {
-  const [hasLiked,setHasLiked] = useState(false);
-
-
-  return(
-    <div className="card">
-      <h2> 
-        {title}
-        
-      </h2>
-       <button onClick={() => {setHasLiked(!hasLiked)}}>
-        {hasLiked ? 'Liked' :'Like'}
-        </button>
-    </div>
-  )
-}
-
-
-
-
-
-
+import React from 'react'
 
 const App = () => {
-
-
-  return(
-    <div className="card-container">
-
-      <h2>Functional Arrow Components</h2>
-        <Card   title= "Star Wars"/>
-        <Card  title= "Avatar"/>
-        <Card  title = "The Lion King"/>
-
-    </div>
+  return (
+    <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
   )
-
 }
 
-export default  App;
+export default App
