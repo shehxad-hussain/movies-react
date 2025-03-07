@@ -16,4 +16,4 @@ const Search = ({ searchTerm, setSearchTerm }) => {
     </div>
   )
 }
-export default Search;
+export default Search
